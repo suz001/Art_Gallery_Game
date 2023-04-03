@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeManager : MonoBehaviour
+public class GetTimeManager : MonoBehaviour
 {
     public const int hoursInDay = 24, minutesInHour = 60;
 
