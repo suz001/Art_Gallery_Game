@@ -7,7 +7,7 @@ using TMPro;
 public class Shop : MonoBehaviour
 {
     public List<LootShop> lootlist = new List<LootShop>();
-
+    public GameObject ImagePref;
     // Start is called before the first frame update
     
     LootShop PickItem()
@@ -25,10 +25,31 @@ public class Shop : MonoBehaviour
 
         if(possibleItems.Count>0)
         {
-            LootShop item = possibleItems[Random.Range(0, possibleItems.Count)];
-            print(item.lootName);
-            return item;
+            LootShop itemPick = possibleItems[Random.Range(0, possibleItems.Count)];
+            print(itemPick.lootName);
+            return itemPick;
         }
+
+        if (possibleItems.Count == 0)
+        {
+           
+            return lootlist[1];
+        }
+
+        Debug.Log("does not create");
         return null;
     }
+
+    //Vector3 spawnPosition
+    public LootShop InstantiateLoot()
+    {
+        LootShop getItem = PickItem();
+        
+        //GameObject lootGameObject = Instantiate(ImagePref, spawnPosition, Quaternion.identity);
+       // lootGameObject.GetComponent<SpriteRenderer>().sprite = getItem.lootSprite;
+        //Sprite newImage = getItem.lootSprite;
+        return getItem;
+    }
+
+  
 }
