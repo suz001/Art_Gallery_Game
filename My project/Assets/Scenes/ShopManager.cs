@@ -32,7 +32,7 @@ public class ShopManager : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        coins = managaMain.getCoins();
+        //coins = managaMain.getCoins();
         item1 = image.InstantiateLoot();
         item2 = image.InstantiateLoot();
         item3 = image.InstantiateLoot();

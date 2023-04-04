@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour, IdDataPersistence
 {
+    
     public float moveSpeed = 1f;
     public float collisionOffset=0.05f;
     public ContactFilter2D movementFilter;
@@ -16,7 +17,9 @@ public class PlayerMovement : MonoBehaviour, IdDataPersistence
     // Start is called before the first frame update
     void Start()
     {
+        
         rb=GetComponent<Rigidbody2D>();
+        Time.timeScale = 1f;
         //animator = GetComponent<Animator>();
         //spriteRender = GetComponent<SpriteRenderer>();
     }
