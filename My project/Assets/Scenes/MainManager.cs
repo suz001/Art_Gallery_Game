@@ -19,5 +19,26 @@ public class MainManager : MonoBehaviour
     {
         return coins;
     }
+
+    public void setCoins(int coin)
+    {
+        coins = coin;
+    }
+
+    public int getPres()
+    {
+        return prestige;
+    }
+
+    public void setPres(int newPres)
+    {
+        prestige = newPres;
+    }
+
+    void Update()
+    {
+        prestigeTXT.text = "Prestige: " + prestige.ToString();
+        coinsTXT.text = "Coins: " + coins.ToString();
+    }
 }
 

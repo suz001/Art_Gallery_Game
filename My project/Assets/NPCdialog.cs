@@ -13,7 +13,7 @@ public class NPCdialog : MonoBehaviour
     public GameObject BuyButton;
     public GameObject NoButton;
     public bool playerIsClose;
-
+    public GameObject shopPanel;
     void Update()
     {
         if((Input.GetKeyDown(KeyCode.F))&&playerIsClose)
@@ -25,7 +25,8 @@ public class NPCdialog : MonoBehaviour
 
     public void EnterShop()
     {
-        SceneManager.LoadScene(2);
+        diaglogPanel.SetActive(false);
+        shopPanel.SetActive(true);
     }
 
     public void CloseDialog()
@@ -37,7 +38,7 @@ public class NPCdialog : MonoBehaviour
     {
         if(other.tag=="Player")
         {
-            print("hint");
+
             playerIsClose = true;
         }
     }

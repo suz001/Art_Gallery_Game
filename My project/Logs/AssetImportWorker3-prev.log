@@ -1,23 +1,21 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.20f1 (577897200b8b) revision 5732503'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 31941 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32627 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.20f1\Editor\Unity.exe
+G:\unity\2021.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker3
 -projectPath
-C:/Users/Shuxu/OneDrive/Documents/GitHub/Art_Gallery_Game/My project
+F:/4th year/CS4483/artGallery/Art_Gallery_Game/My project
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-64155
-Successfully changed project path to: C:/Users/Shuxu/OneDrive/Documents/GitHub/Art_Gallery_Game/My project
-C:/Users/Shuxu/OneDrive/Documents/GitHub/Art_Gallery_Game/My project
+
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,109 +45,170 @@ C:/Users/Shuxu/OneDrive/Documents/GitHub/Art_Gallery_Game/My project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3168] Host "[IP] 192.168.0.163 [Port] 0 [Flags] 2 [Guid] 1700182529 [EditorId] 1700182529 [Version] 1048832 [Id] WindowsEditor(7,suz) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3168] Host "[IP] 192.168.0.163 [Port] 0 [Flags] 2 [Guid] 1700182529 [EditorId] 1700182529 [Version] 1048832 [Id] WindowsEditor(7,suz) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
-
-Refreshing native plugins compatible for Editor in 127.23 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.20f1 (577897200b8b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Shuxu/OneDrive/Documents/GitHub/Art_Gallery_Game/My project/Assets
+[Subsystems] Discovering subsystems at path G:/unity/2021.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/4th year/CS4483/artGallery/Art_Gallery_Game/My project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24e0)
-    Vendor:   NVIDIA
-    VRAM:     8043 MB
-    Driver:   30.0.15.1298
+    Renderer: Radeon (TM) 530 (ID=0x6900)
+    Vendor:   ATI
+    VRAM:     2038 MB
+    Driver:   27.20.15030.19
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005746 seconds.
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 88.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.595 seconds
-Domain Reload Profiling:
-	ReloadAssembly (596ms)
-		BeginReloadAssembly (81ms)
+
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (423ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (82ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (270ms)
+
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (89ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (126ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011764 seconds.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\4th year\CS4483\artGallery\Art_Gallery_Game\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\4th year\CS4483\artGallery\Art_Gallery_Game\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4082 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (24.6 KB). Loaded Objects now: 4585.
+Memory consumption went from 156.2 MB to 156.1 MB.
+Total: 3.309800 ms (FindLiveObjects: 0.316700 ms CreateObjectMapping: 0.167000 ms MarkObjects: 2.798600 ms  DeleteObjects: 0.026400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010060 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Shuxu\OneDrive\Documents\GitHub\Art_Gallery_Game\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Shuxu\OneDrive\Documents\GitHub\Art_Gallery_Game\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 87.26 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.054 seconds
+- Completed reload, in  0.921 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1054ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (135ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (852ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (685ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (193ms)
+			SetupTypeCache (203ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (482ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (317ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (264ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (210ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.33 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4139 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (56.4 KB). Loaded Objects now: 4600.
-Memory consumption went from 159.6 MB to 159.5 MB.
-Total: 3.761900 ms (FindLiveObjects: 0.557100 ms CreateObjectMapping: 0.191100 ms MarkObjects: 2.927600 ms  DeleteObjects: 0.085400 ms)
+Unloading 4082 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (24.6 KB). Loaded Objects now: 4600.
+Memory consumption went from 156.2 MB to 156.2 MB.
+Total: 3.191000 ms (FindLiveObjects: 0.305500 ms CreateObjectMapping: 0.132000 ms MarkObjects: 2.719500 ms  DeleteObjects: 0.032900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,10 +223,127 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 375054.666403 seconds.
-  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon41.png
-  artifactKey: Guid(f0226b16113a0c44480cca6983177b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon41.png using Guid(f0226b16113a0c44480cca6983177b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32008a5dc54cd58e42387fbf8588834b') in 0.143868 seconds 
+  Time since last request: 402284.365839 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon2.png
+  artifactKey: Guid(d7fd2c3c7c77bb741922dd429d6b8b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon2.png using Guid(d7fd2c3c7c77bb741922dd429d6b8b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf3daa1d714d3b4955ab91c8c685415') in 0.119031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon42.png
+  artifactKey: Guid(c7f9980b9dfe2404789aace488d69d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon42.png using Guid(c7f9980b9dfe2404789aace488d69d6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b667442fcf78a94d143012634f478a') in 0.020199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon40.png
+  artifactKey: Guid(b9773f6daccd7204aba4c7583793fabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon40.png using Guid(b9773f6daccd7204aba4c7583793fabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e16005463a30d9927e4c32bf7257f0d3') in 0.018482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon20.png
+  artifactKey: Guid(3ea1ae9a0b6952647bd390a5c97e0ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon20.png using Guid(3ea1ae9a0b6952647bd390a5c97e0ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd3d4f69e694cd28a90cf0f8a5315ba') in 0.016968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon7.png
+  artifactKey: Guid(7bd4baa03343a794fa0619cc0ecd23a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon7.png using Guid(7bd4baa03343a794fa0619cc0ecd23a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b59a05f3ec45c2545526ceef421ab1d') in 0.017821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon36.png
+  artifactKey: Guid(253dfa7bfac41bb438efeac3390058d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon36.png using Guid(253dfa7bfac41bb438efeac3390058d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c47bcfd80b74bbe2bb9b0fdc06d0ab') in 0.019107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon35.png
+  artifactKey: Guid(386782908acf3634e812c3e239cce4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon35.png using Guid(386782908acf3634e812c3e239cce4ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a56d95cd2097e967ac4d0965f20823e') in 0.016308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon10.png
+  artifactKey: Guid(0e55d0ed674442c45a44a8f96ed22c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon10.png using Guid(0e55d0ed674442c45a44a8f96ed22c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2ef380a1e16265697bdbb4fd43a49c') in 0.017217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon43.png
+  artifactKey: Guid(eaaa687c5b044bc4d9a0c3039bf61f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon43.png using Guid(eaaa687c5b044bc4d9a0c3039bf61f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56979b2fdc9291a4fa23aa14ef13670') in 0.017418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon12.png
+  artifactKey: Guid(5032fd6e80609d342b427400fa3a50d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon12.png using Guid(5032fd6e80609d342b427400fa3a50d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e85c14efa472c80259c82e763fcf0b') in 0.017819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon18.png
+  artifactKey: Guid(49123a490b5a77b4ebeb01b207769ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon18.png using Guid(49123a490b5a77b4ebeb01b207769ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb297375db97614b5c6b5aa39cd5b18b') in 0.020958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon28.png
+  artifactKey: Guid(5d65f649d8c43c74b8261d0530e33f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon28.png using Guid(5d65f649d8c43c74b8261d0530e33f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a855334d52b702b5152bd620c800e33') in 0.019652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon29.png
+  artifactKey: Guid(77dd5de7866b0934f89f78163d7e2dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon29.png using Guid(77dd5de7866b0934f89f78163d7e2dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60bca0d0ffba6f517bcb08316e725c60') in 0.017225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon31.png
+  artifactKey: Guid(9d2d9fc7fb4a4614994c8bf63b15f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon31.png using Guid(9d2d9fc7fb4a4614994c8bf63b15f1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b60dd5907067eab3ce3cdb8cf78f523') in 0.020055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon4.png
+  artifactKey: Guid(324ffa2b5a759784eac6b8dab84fe11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon4.png using Guid(324ffa2b5a759784eac6b8dab84fe11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2951dd3695dbbb25f1198c6a035a7f4b') in 0.015308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon26.png
+  artifactKey: Guid(d2cee4bc77909834bb31ae713c92a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon26.png using Guid(d2cee4bc77909834bb31ae713c92a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88e67dbcee708cfce2523d2f53db343') in 0.017384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon21.png
+  artifactKey: Guid(6eea8043904eb0241bb99938438236e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon21.png using Guid(6eea8043904eb0241bb99938438236e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eee5fddea6a4db476f44fdf9949f549') in 0.025251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon33.png
+  artifactKey: Guid(efcafb36114411d46aec9e6d9a984af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon33.png using Guid(efcafb36114411d46aec9e6d9a984af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6412e03c36be9c035fcc53ba7a74631d') in 0.017698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon6.png
+  artifactKey: Guid(0c56a3ed4a6fe924e93f411935ec3137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon6.png using Guid(0c56a3ed4a6fe924e93f411935ec3137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ae39cea004d7048492cbd277bb5bee') in 0.019532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon37.png
+  artifactKey: Guid(0332de190583c664184310f6e0f4dbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Free Minerals Pixel Art Icons/PNG/Transperent/Icon37.png using Guid(0332de190583c664184310f6e0f4dbc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66c9797acae928df18aec5e5e3fa5af') in 0.014197 seconds 
+========================================================================
+Received Import Request.
+
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

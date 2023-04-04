@@ -48,7 +48,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.LoadData(gameData);
 
         }
-        Debug.Log("Loaded total time = " + gameData.PlayerPosition);
+        //Debug.Log("Loaded total time = " + gameData.PlayerPosition);
     }
     public void SaveGame(){
         foreach(IdDataPersistence dataPersistenceObj in DataPersistenceObject){
@@ -56,7 +56,7 @@ public class DataPersistenceManager : MonoBehaviour
             //Debug.Log("test");
         }
         
-        Debug.Log("Saved total time = "+ gameData.PlayerPosition);
+        //Debug.Log("Saved total time = "+ gameData.PlayerPosition);
         
         dataHandler.Save(gameData);
     }

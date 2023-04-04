@@ -9,13 +9,42 @@ public class Inventory : MonoBehaviour
     public GameObject CloseButton;
     public GameObject InventoryPanel;
 
-    public void CloseInventory()
+    [SerializeField]
+    private UIInventoryPage inventoryUI;
+
+    public int inventorySize = 10;
+    private bool isopen=false;
+
+    private void Start()
     {
-        InventoryPanel.SetActive(false);
+        inventoryUI.InitializeInventoryUI(inventorySize);
+    }
+   
+    public void Update()
+    {
+        if (isopen == true)
+        {
+            if (inventoryUI.isActiveAndEnabled == false)
+            {
+                inventoryUI.Show();
+            }
+            else
+            {
+                inventoryUI.Hide();
+            }
+        }
+        
+    }
+   public void CloseInventory()
+    {
+        
+        isopen = false;
     }
 
     public void OpenInventiry()
     {
-        InventoryPanel.SetActive(true);
+        isopen = true;
+
+
     }
 }

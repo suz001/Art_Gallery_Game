@@ -10,9 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7056f8f65ea08e42842c73f04ca1138, type: 3}
-  m_Name: New Loot Shop 1
+  m_Name: item6
   m_EditorClassIdentifier: 
-  lootSprite: {fileID: 21300000, guid: 736aaa2362f97f14a9d71d0640d4686c, type: 3}
-  lootName: mineral1
-  dropChance: 10
-  value: 1000
+  <IsStackable>k__BackingField: 1
+  <MaxStackSize>k__BackingField: 99
+  <lootName>k__BackingField: item6
+  <description>k__BackingField: '  Prestige + 50'
+  <lootSprite>k__BackingField: {fileID: 21300000, guid: 895ba40745ef7b14898f78c4c79a3711, type: 3}
+  <dropChance>k__BackingField: 45
+  <value>k__BackingField: 500
+  <pres>k__BackingField: 50
