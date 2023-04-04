@@ -8,11 +8,14 @@ public class MainMenu : MonoBehaviour
     public GameObject settingsPanel;
 
     // Start is called before the first frame update
-    public void StartGame()
+    public void onNewGameClicked()
     {
-        SceneManager.LoadScene(1);
+        //DataPersistenceManager.instance.NewGame();
     }
-
+    public void onLoadGameClicked()
+    {
+        //DataPersistenceManager.instance.LoadGame();
+    }
 
 
     //Exit Game is called once per frame
