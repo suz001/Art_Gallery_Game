@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IdDataPersistence
 {
     public float moveSpeed = 1f;
     public float collisionOffset=0.05f;
@@ -66,6 +66,13 @@ public class PlayerMovement : MonoBehaviour
     }
     void OnMove(InputValue movementValue){
         movementInput = movementValue.Get<Vector2>();
+    }
+    public void LoadData(GameData data){
+
+        this.transform.position = data.PlayerPosition;
+    }
+    public void SaveData(ref GameData data){
+        data.PlayerPosition = this.transform.position;
     }
 }
 
