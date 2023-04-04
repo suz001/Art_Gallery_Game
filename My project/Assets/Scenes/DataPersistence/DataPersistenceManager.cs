@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -20,23 +21,48 @@ public class DataPersistenceManager : MonoBehaviour
         if(instance != null)
         {
             Debug.LogError("Found more than one Data persistence manager in the scene");
-
+            /*Destroy(this.gameObject);
+            return;*/
         }
         instance = this;
+        //DontDestroyOnLoad(this.gameObject);
+        
+
 
     }
-    private void Start(){
+    /*
+    private void OnEnable(){
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    }
+    private void OnDisable(){
+
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+    }
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        Debug.Log("loaded");
+        this.DataPersistenceObject = FindAllDataPersistenceObjects();
+        LoadGame();
         
+    }
+    public void OnSceneUnloaded(Scene scene){
+        Debug.Log("unloaded");
+        SaveGame();
+    }
+    */
+    private void Start(){
         this.dataHandler = new FileDataHandler(Application.persistentDataPath,fileName);
         this.DataPersistenceObject = FindAllDataPersistenceObjects();
-        //Debug.Log("Hit count: " + DataPersistenceObject.Count);
         LoadGame();
     }
     public void NewGame(){
+        Debug.Log("new");
         this.gameData = new GameData();
     }
     public void LoadGame(){
-
+        Debug.Log("LOADGAME");
         this.gameData = dataHandler.Load();
 
         if(this.gameData==null){
@@ -51,12 +77,14 @@ public class DataPersistenceManager : MonoBehaviour
         //Debug.Log("Loaded total time = " + gameData.PlayerPosition);
     }
     public void SaveGame(){
+        /*if(this.gameData == null){
+            return;
+        }*/
+    
         foreach(IdDataPersistence dataPersistenceObj in DataPersistenceObject){
             dataPersistenceObj.SaveData(ref gameData);
             //Debug.Log("test");
         }
-        
-        //Debug.Log("Saved total time = "+ gameData.PlayerPosition);
         
         dataHandler.Save(gameData);
     }
@@ -65,11 +93,10 @@ public class DataPersistenceManager : MonoBehaviour
         
         return new List<IdDataPersistence>(DataPersistenceObject);
     }
-    private void OnApplicationQuit(){
-        //foreach(IdDataPersistence dataPersistenceObj in DataPersistenceObject){
-            
-        //}
-        //Debug.Log("Hit count: " + DataPersistenceObject.Count);
-        SaveGame();
+
+    public bool HasGameData(){
+
+        return gameData !=null;
     }
+
 }

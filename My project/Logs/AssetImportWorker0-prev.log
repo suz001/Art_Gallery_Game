@@ -72,7 +72,6 @@ Initialize mono
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 
-
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
@@ -86,7 +85,3 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Import Request.
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

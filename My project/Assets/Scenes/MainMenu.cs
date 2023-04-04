@@ -2,19 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
-    public GameObject settingsPanel;
+   
+
+    //public GameObject settingsPanel;
+
 
     // Start is called before the first frame update
-    public void onNewGameClicked()
+/*    public void onNewGameClicked()
     {
-        //DataPersistenceManager.instance.NewGame();
-    }
+        DisableMenuButtons();
+        DataPersistenceManager.instance.NewGame();
+        SceneManager.LoadSceneAsync(1);
+    }*/
     public void onLoadGameClicked()
     {
+        
+
         //DataPersistenceManager.instance.LoadGame();
+        SceneManager.LoadSceneAsync(1);
     }
 
 
@@ -25,4 +33,5 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
 
     }
+
 }

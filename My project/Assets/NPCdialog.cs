@@ -13,7 +13,15 @@ public class NPCdialog : MonoBehaviour
     public GameObject BuyButton;
     public GameObject NoButton;
     public bool playerIsClose;
+
     public GameObject shopPanel;
+
+    public GameObject Instruction;
+
+    private void Starat(){
+        Instruction.SetActive(false);
+    }
+
     void Update()
     {
         if((Input.GetKeyDown(KeyCode.F))&&playerIsClose)
@@ -40,14 +48,17 @@ public class NPCdialog : MonoBehaviour
         {
 
             playerIsClose = true;
+            Instruction.SetActive(true);
+
         }
+        DataPersistenceManager.instance.SaveGame();
     }
 
 
     private void OnTriggerExit2D(Collider2D other)
     {
        
-            playerIsClose = false;
-       
+        playerIsClose = false;
+        Instruction.SetActive(false);
     }
 }
