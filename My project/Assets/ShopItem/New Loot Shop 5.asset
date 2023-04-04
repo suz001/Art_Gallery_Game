@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lootSprite: {fileID: 21300000, guid: 169e09cbd00906d46beeef43bdb4f614, type: 3}
   lootName: mineral5
-  dropChance: 100
+  dropChance: 90
+  value: 100

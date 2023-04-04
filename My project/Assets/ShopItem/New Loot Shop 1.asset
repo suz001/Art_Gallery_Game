@@ -15,3 +15,4 @@ MonoBehaviour:
   lootSprite: {fileID: 21300000, guid: 736aaa2362f97f14a9d71d0640d4686c, type: 3}
   lootName: mineral1
   dropChance: 10
+  value: 1000
