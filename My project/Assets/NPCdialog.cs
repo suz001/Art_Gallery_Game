@@ -18,6 +18,7 @@ public class NPCdialog : MonoBehaviour
     private void Starat(){
         Instruction.SetActive(false);
     }
+    public GameObject shopPanel;
     void Update()
     {
         if((Input.GetKeyDown(KeyCode.F))&&playerIsClose)
@@ -29,7 +30,8 @@ public class NPCdialog : MonoBehaviour
 
     public void EnterShop()
     {
-        SceneManager.LoadScene(2);
+        diaglogPanel.SetActive(false);
+        shopPanel.SetActive(true);
     }
 
     public void CloseDialog()
@@ -41,7 +43,7 @@ public class NPCdialog : MonoBehaviour
     {
         if(other.tag=="Player")
         {
-            print("hint");
+
             playerIsClose = true;
             Instruction.SetActive(true);
 

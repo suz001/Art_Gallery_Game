@@ -86,6 +86,7 @@ public class DataPersistenceManager : MonoBehaviour
             //Debug.Log("test");
         }
         
+
         dataHandler.Save(gameData);
     }
     private List<IdDataPersistence> FindAllDataPersistenceObjects(){
