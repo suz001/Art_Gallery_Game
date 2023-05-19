@@ -40,5 +40,6 @@ public class MainManager : MonoBehaviour
         prestigeTXT.text = "Prestige: " + prestige.ToString();
         coinsTXT.text = "Coins: " + coins.ToString();
     }
+    
 }
 

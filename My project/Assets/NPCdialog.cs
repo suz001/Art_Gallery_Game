@@ -18,10 +18,15 @@ public class NPCdialog : MonoBehaviour
 
     public GameObject Instruction;
 
+<<<<<<< Updated upstream
     private void Starat(){
         Instruction.SetActive(false);
     }
 
+=======
+    
+    public GameObject shopPanel;
+>>>>>>> Stashed changes
     void Update()
     {
         if((Input.GetKeyDown(KeyCode.F))&&playerIsClose)
@@ -30,7 +35,9 @@ public class NPCdialog : MonoBehaviour
  
         }
     }
-
+    private void Start(){
+        Instruction.SetActive(false);
+    }
     public void EnterShop()
     {
         diaglogPanel.SetActive(false);

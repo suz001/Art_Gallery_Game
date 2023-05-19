@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using System;
 
-public class ShopManager : MonoBehaviour
+public class ShopManager : MonoBehaviour,IdDataPersistence
 {
 
     [SerializeField]
@@ -361,6 +361,21 @@ public class ShopManager : MonoBehaviour
     public LootShop BuyItem4()
     {
         return item4;
+    }
+    public void LoadData(GameData data){
+        Debug.Log("loaded");
+        this.coins = data.coins;
+        this.pres= data.prestige;
+        stats.setCoins(coins);
+        stats.setPres(pres);
+    }
+    public void SaveData(ref GameData data){
+        Debug.Log("saved");
+        coins = stats.getCoins();
+        pres = stats.getPres();
+        data.coins=this.coins;
+        data.prestige=this.pres;
+        
     }
 
     

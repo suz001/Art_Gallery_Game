@@ -5,7 +5,7 @@ using System;
 
 
 
-    public class InventoryController : MonoBehaviour
+    public class InventoryController : MonoBehaviour,IdDataPersistence
     {
         [SerializeField]
         private UIInventoryPage inventoryUI;
@@ -108,5 +108,14 @@ using System;
                 }
             }
         }
+    public void LoadData(GameData data){
+
+        this.transform.position = data.PlayerPosition;
+    }
+    public void SaveData(ref GameData data){
+        data.PlayerPosition = this.transform.position;
+    }
+
+        
     }
 
